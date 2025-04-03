@@ -1,7 +1,7 @@
 package com.example.ex6.controller;
 
 import com.example.ex6.dto.SkieurDTO;
-import com.example.ex6.model.Cat;
+import com.example.ex6.model.Pays;
 import com.example.ex6.model.Skieur;
 import com.example.ex6.repository.PaysRepository;
 import com.example.ex6.repository.SkieurRepository;

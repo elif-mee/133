@@ -1,6 +1,6 @@
 package com.example.ex6.service;
 import com.example.ex6.dto.SkieurDTO;
-import com.example.ex6.model.Cat;
+import com.example.ex6.model.Pays;
 import com.example.ex6.model.Skieur;
 import com.example.ex6.repository.PaysRepository;
 import com.example.ex6.repository.SkieurRepository;
@@ -42,7 +42,7 @@ public class SkieurService {
 
     @Transactional
     public String addNewSkieur(String name, Integer position, Integer paysId) {
-        Cat pays = paysRepository.findById(paysId).orElse(null);
+        Pays pays = paysRepository.findById(paysId).orElse(null);
         if (pays == null) {
             return "Pays not found";
         }
